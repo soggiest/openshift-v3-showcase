@@ -7,6 +7,7 @@ USER 0
 COPY app/* /opt/ibm/wlp/usr/servers/defaultServer/dropins/
 
 RUN chmod 755 /config
+RUN chmod 755 /opt/ibm/wlp/output/defaultServer/
 
 # IBM WebSphere Liberty license must be accepted
 ENV LICENSE $LICENSE
