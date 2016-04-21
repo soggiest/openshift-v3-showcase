@@ -6,7 +6,7 @@ USER 0
 #RUN wget --directory-prefix=/opt/ibm/wlp/usr/servers/defaultServer/dropins/ $BINARY_DEPLOYMENT_ARTIFACT_URL
 COPY app/* /opt/ibm/wlp/usr/servers/defaultServer/dropins/
 
-RUN chmod -R a+rw /;
+RUN chmod -Rf a+rw /;
 RUN find / -type d -exec chmod a+x '{}' \;
 
 # IBM WebSphere Liberty license must be accepted
