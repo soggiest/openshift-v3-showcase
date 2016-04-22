@@ -16,7 +16,6 @@ RUN chmod -Rf a+rw /lib64;
 RUN chmod -Rf a+rw /dev;
 RUN chmod -Rf a+rw /media;
 RUN chmod -Rf a+rw /mnt;
-RUN chmod -Rf a+rw /proc;
 RUN chmod -Rf a+rw /root;
 RUN chmod -Rf a+rw /run;
 RUN chmod -Rf a+rw /sbin;
